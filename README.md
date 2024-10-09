@@ -1,7 +1,8 @@
 # OpenProject with Docker Compose
 
 This guide will help you set up and run an OpenProject instance using Docker Compose.  
-https://www.openproject.org/
+https://www.openproject.org/  
+https://www.openproject.org/docs/installation-and-operations/installation/docker/
 
 ## Prerequisites
 
