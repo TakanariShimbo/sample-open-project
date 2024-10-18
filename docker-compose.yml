@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   openproject:
-    image: openproject/community:13.4.1
+    image: openproject-custom:13.4.1
     ports:
       - "${HOST_PORT}:80"
     volumes:

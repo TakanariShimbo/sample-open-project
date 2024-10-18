@@ -37,7 +37,14 @@ SECRET_KEY_BASE=<your-generated-secret-key>
 
 Make sure to replace `<your-generated-secret-key>` with the value you obtained from the `openssl` command.
 
-### 3. Run Docker Compose
+### 3. Build Dockerfile
+
+```bash
+# if FROM openproject/community:13.4.1
+docker build -t openproject-custom:13.4.1 .
+```
+
+### 4. Run Docker Compose
 
 Now you're ready to start OpenProject using Docker Compose. Run the following command in the root directory:
 
@@ -47,7 +54,7 @@ docker-compose up -d
 
 This command will start the OpenProject service in detached mode.
 
-### 4. Access OpenProject
+### 5. Access OpenProject
 
 Once the containers are up and running, you can access the OpenProject instance in your browser at:
 
@@ -55,7 +62,7 @@ Once the containers are up and running, you can access the OpenProject instance 
 http://localhost:30080
 ```
 
-### 5. Stopping the containers
+### 6. Stopping the containers
 
 To stop the running containers, use the following command:
 
